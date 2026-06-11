@@ -1,0 +1,14 @@
+. In a simple lab exercise with a single target, you might dive straight into that session and start exploring. But real engagements are rarely that simple. Consider the Stratford Systems scenario: your scope includes a dozen hosts across two subnets. Over the course of the engagement, you may open sessions on multiple machines, some through direct exploitation, others through pivoting from already-compromised hosts. If you cannot keep track of which session connects to which target, or if you lose a session because you did not background it before launching your next exploit, you are wasting time and potentially alerting defenders.
+
+What Is a Session?
+A session in Metasploit is an active communication channel between your attacking machine and a compromised target. When an exploit succeeds and the payload executes, the payload connects back to (or accepts a connection from) your machine. That connection is registered as a session with a unique numeric ID.
+
+Backgrounding a Session
+When you are in an active session (you see meterpreter > or a shell prompt from the target), you can return to the msfconsole prompt without closing the session. This is called backgrounding.
+
+Use the background command (or its shortcut, CTRL+Z):
+
+To drop back into a specific session, use sessions -i followed by the session ID:
+To terminate a specific session, use sessions -k followed by the session ID:
+
+Note the difference: lowercase -k <id> kills a single session; uppercase -K kills all sessions. In a real engagement, losing all your sessions simultaneously is a setback, so use -K deliberately and only when you intend to clean up.

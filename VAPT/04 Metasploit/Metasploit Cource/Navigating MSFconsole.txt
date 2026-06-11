@@ -1,0 +1,33 @@
+Purpose: Learn how to launch and use msfconsole to explore modules without memorizing names.
+
+Launching: Run msfconsole in Kali/AttackBox → shows ASCII banner, version, and module counts. Prompt changes to msf6 >.
+
+Linux Commands: Supports basic Linux commands (whoami, ip a) inside console. No output redirection; use spool for logging.
+
+Help System: help lists commands; help <command> shows usage. Useful for search syntax.
+
+History & Tab Completion:
+
+history shows past commands.
+
+Arrow keys cycle through inputs.
+
+Tab auto-completes commands, paths, and options.
+
+Searching Modules:
+
+search <keyword> finds modules.
+
+example: search type:exploit apache
+
+Filters: type, platform, cve, name.
+
+Use - to exclude results.
+
+Exploit Rankings: Reliability scale from Excellent → Manual. Higher rank = safer/more reliable, but not guaranteed.
+
+Inspecting Modules:
+
+info <module> or info <index> shows details (platform, options, rank, references).
+
+Key fields: Privileged access, Check support, Available targets.

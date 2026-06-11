@@ -1,0 +1,89 @@
+# DVWA File Upload Vulnerability – Reverse Shell Lab Notes
+
+## Objective
+
+Gain remote command execution through a vulnerable file upload feature in DVWA and understand how reverse-shell connections work.
+
+## Steps Performed
+
+### 1. Payload Generation
+
+* Used **msfvenom** to generate a PHP reverse-shell payload.
+* Saved the generated payload as `reverse.php`.
+* Configured the payload to connect back to the attacker's machine on a specified IP address and port.
+
+### 2. Listener Setup
+
+* Used **Netcat (nc)** as a listener on the configured port.
+* Netcat waited for incoming connections from the target system.
+
+### 3. Vulnerability Identification
+
+* Identified that **DVWA** was vulnerable to unrestricted file upload.
+* The application allowed uploading PHP files without proper validation.
+
+### 4. Payload Upload
+
+* Uploaded `reverse.php` through the vulnerable file upload functionality.
+* Accessed the uploaded file through the browser.
+
+### 5. Reverse Shell Connection
+
+* When the PHP file executed on the server, it initiated a connection back to the attacker's machine.
+* Netcat received the incoming connection, providing remote command execution.
+
+## Session Behavior
+
+* Reverse-shell sessions established through PHP may terminate when:
+
+  * The PHP script finishes execution.
+  * The web server ends the process.
+  * The connection becomes idle.
+
+* To help maintain activity, periodic commands can be executed so the session remains active for longer.
+
+## Alternative Listener
+
+* Instead of Netcat, **Metasploit's multi/handler** can be used to receive the connection.
+
+* Advantages of Netcat:
+
+  * Lightweight
+  * Simple to use
+  * Quick setup
+
+* Advantages of multi/handler:
+
+  * Better payload handling
+  * More advanced session management
+  * Integration with Metasploit features
+
+## Alternative Payload Delivery Method
+
+* Another approach is to host the payload on the attacker's machine using a web server.
+* The target system can then download the payload from the attacker's server.
+* This demonstrates how payload delivery can occur through different mechanisms depending on the available access and vulnerabilities.
+
+## Key Learning Points
+
+* Understanding reverse-shell payload generation.
+* Using Netcat as a listener.
+* Exploiting file upload vulnerabilities.
+* Understanding reverse-shell session lifecycle.
+* Comparing Netcat and Metasploit handlers.
+* Exploring alternative payload delivery techniques.
+* Importance of secure file-upload validation in web applications.
+
+## Defensive Perspective
+
+To prevent such attacks:
+
+* Restrict executable file uploads.
+* Validate file extensions and MIME types.
+* Store uploaded files outside the web root.
+* Implement allowlists for accepted file types.
+* Use web application firewalls and security monitoring.
+
+
+python3 -m http.server 8000 (to establish server)
+wget http://192.168.1.10:8000/file.txt (to download the file from server)

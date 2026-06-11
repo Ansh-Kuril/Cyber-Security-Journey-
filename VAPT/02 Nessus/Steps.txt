@@ -1,0 +1,59 @@
+01
+Install Nessus
+Set up the Nessus vulnerability scanner on your system.
+
+Download Nessus from Tenable’s official site
+
+Install using your OS package manager or installer
+
+Start the Nessus service
+
+02
+Access Web Interface
+Nessus is managed via a browser dashboard.
+
+Navigate to https://localhost:8834
+
+Create an admin account
+
+Enter activation code to register
+
+03
+Configure Scan Policies
+Define how Nessus should scan targets.
+
+Choose scan type (basic network scan, advanced, etc.)
+
+Set port ranges and discovery options
+
+Adjust performance settings if needed
+
+04
+Add Target Server
+Specify the system you want to scan.
+
+Enter the target IP or hostname
+
+Save the configuration
+
+Optionally group multiple targets
+
+05
+Run Vulnerability Scan
+Launch the scan and let Nessus analyze the system.
+
+Start the configured scan
+
+Wait for completion (progress shown in dashboard)
+
+Review results in the Reports section
+
+06
+Analyze Findings
+Interpret the vulnerabilities Nessus discovered.
+
+Check severity levels (Critical, High, Medium, Low)
+
+Expand each finding for details and remediation steps
+
+Export results as PDF/CSV for documentation

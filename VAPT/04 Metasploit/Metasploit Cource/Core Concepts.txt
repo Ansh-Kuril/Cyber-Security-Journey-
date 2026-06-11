@@ -1,0 +1,35 @@
+Vulnerability: A design, coding, or configuration flaw in a target system. The flaw itself does not cause harm; it creates an opportunity for harm. A vulnerability might allow an attacker to execute arbitrary code, read files they should not have access to, or bypass authentication entirely.
+
+Exploit: A piece of code that takes advantage of a specific vulnerability. The exploit is the mechanism of attack. It targets the flaw and triggers it in a controlled way.
+
+Payload: The code that runs on the target system after the exploit succeeds. The exploit opens the door; the payload is what walks through it. A payload might open a reverse shell back to the attacker, create a new user account, or execute a command on the target.
+
+
+Exploits → Code that uses a vulnerability to gain access to a target system.
+Payloads → Code that runs after the exploit succeeds (e.g., opens a shell or Meterpreter session).
+Post Exploitation → Modules used after gaining access to gather information, escalate privileges, dump passwords, etc.
+NOPs (No Operation) → Instructions that do nothing; used to help shellcode execute reliably by creating a "landing area."
+Encoders → Modify payload code to avoid bad characters or simple signature-based detection while keeping the same functionality.
+Evasion → Techniques/modules designed to help payloads bypass antivirus, EDR, or other security defenses.
+
+
+Type of Payloads 
+
+Singles
+A single payload contains everything in one piece.
+Analogy: You carry all your tools in one backpack.
+
+Stagers
+A stager is a small first payload whose only job is to establish a connection and prepare for the next step.
+Analogy: A scout enters first and opens the door for the main team.
+
+Stages
+A stage is the larger payload delivered after the stager succeeds.
+Analogy: The main team with all the equipment enters after the scout.
+
+Metasploit uses the payload's path to tell you whether it is staged or single. The separator between the shell type and the connection method is the key:
+
+windows/x64/shell_reverse_tcp — The underscore (_) between shell and reverse means this is a single (stageless) payload. Everything is in one package.
+
+windows/x64/shell/reverse_tcp — The forward slash (/) between shell and reverse means this is a staged payload. A small stager connects first, then downloads the full shell stage.
+

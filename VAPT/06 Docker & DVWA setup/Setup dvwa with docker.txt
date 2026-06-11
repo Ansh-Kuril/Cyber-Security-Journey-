@@ -1,0 +1,42 @@
+# Install Docker
+sudo apt update
+sudo apt install docker.io -y
+
+# Start Docker
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Download DVWA
+docker pull vulnerables/web-dvwa
+
+# Volume Creation persistence
+docker volume create dvwa-data
+
+# Run DVWA with persistence 
+docker run -d \ --name dvwa \ -p 8080:80 \ -v dvwa-data:/var/www/html \ vulnerables/web-dvwa
+
+OR 
+
+# Run DVWA without persistence 
+docker run --name dvwa -d -p 8080:80 vulnerables/web-dvwa
+
+# Check running containers
+docker ps
+
+# Open browser
+http://localhost:8080
+
+# Stop DVWA
+docker stop dvwa
+
+# Start again
+docker start dvwa
+
+# Restart
+docker restart dvwa
+
+# Delete container
+docker rm dvwa
+
+# Delete image
+docker rmi vulnerables/web-dvwa

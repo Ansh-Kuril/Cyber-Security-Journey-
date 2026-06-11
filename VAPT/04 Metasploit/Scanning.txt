@@ -1,0 +1,30 @@
+Port Scanning
+
+You can list potential port scanning modules available using the search portscan command.
+
+use any module i am using auxiliary/scanner/portscan/tcp
+it was in 5th row : use 5
+
+show options 
+set RHOST
+more threads more fast
+
+NOTE: to scan ports Metasploit is not a fast option rather use nmap -sS (half open scan) targerip
+
+UDP service Identification
+scanner/discovery/udp_sweep
+
+SMB Scans
+scanner/smb/smb_version
+
+
+SMB LOGIN BRUTEFORCE ON TRYHACKME MACHINE
+
+search smb_login 
+use 
+show options
+setg RHOST 
+set SMB_USER penny
+set PASS_FILE /usr/share/wordlists/MetasploitRoom/MetasploitWordlist.txt
+
+EXPLOIT 

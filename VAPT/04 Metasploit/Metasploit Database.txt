@@ -1,0 +1,31 @@
+Metasploit has a database function to simplify project management and avoid possible confusion when setting up parameter values.
+
+You will first need to start the PostgreSQL database, which Metasploit will use with the following command: systemctl start postgresql.
+
+Then you will need to initialize the Metasploit Database using the msfdb init command. However, trying to run msfdb init as root will give the following error message, "Please run msfdb as a non-root user." This can be solved by running it as the postgres account using sudo -u postgres msfdb init.
+
+
+PostgreSQL is a database management system. It stores and organizes data for applications.
+Nmap = Finds hosts and ports
+Metasploit = Uses and manages the findings
+PostgreSQL = Stores all the findings
+
+You can add a workspace using the -a parameter or delete a workspace using the -d parameter, respectively
+
+msf> workspace
+shows all the workspace 
+msf> workspace -a sample 
+creates new workspace
+msf> workspace default or TryHackMe (changes workspace)
+workspace -h command to list available options for the workspace command.
+
+if you run a Nmap scan using the db_nmap shown below, all results will be saved to the database.
+
+You can now reach information relevant to hosts and services running on target systems with the hosts and services commands, respectively. 
+
+Example Workflow
+
+We will use the vulnerability scanning module that finds potential MS17-010 vulnerabilities with the use auxiliary/scanner/smb/smb_ms17_010 command.
+We set the RHOSTS value using hosts -R.
+We have typed show options to check if all values were assigned correctly. (In this example, 10.10.138.32 is the IP address we have scanned earlier using the db_nmap command)
+Once all parameters are set, we launch the exploit using the run or exploit command.  	

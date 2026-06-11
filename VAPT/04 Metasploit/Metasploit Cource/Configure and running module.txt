@@ -1,0 +1,6 @@
+Local vs. Global: Set vs. Setg
+Parameters set with set are local to the current module. If you switch to a different module (using use or back followed by another use), those values are gone. You would need to set them again.
+
+The setg command sets a global value that persists across all modules for the duration of your msfconsole session. This is useful when you are working against the same target with multiple modules.
+
+The -z flag: Adding -z to the exploit command runs the exploit and immediately backgrounds the session once it opens, returning you to the module context prompt instead of dropping you into the Meterpreter session:

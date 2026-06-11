@@ -1,0 +1,26 @@
+A hacker can exploit code injection vulnerabilities by submi ing well-crafted malicious
+input to cause the web application to perform unauthorized actions such as exposing
+sensitive authentication data (usernames and passwords) or executing system commands
+(adding rogue administrator accounts).
+
+Some of
+the most common injection types in web applications include:
+■ Structured query language (SQL) queries
+■ Lightweight directory access protocol (LDAP) queries
+■ XML path language (XPATH) queries
+■ Operating system commands
+
+What is an SQL Interpreter?
+
+An SQL interpreter is the component of a database management system (DBMS) that reads, understands, and executes SQL (Structured Query Language) commands.
+
+SELECT * FROM products WHERE brand = 'Nike';
+
+A hacker can craft malicious input instead of a shoe name in the search box to exploit
+this SQL injection vulnerability while still balancing the quotes so the statement doesn’t
+throw an error. The classic example of this exploit is to enter the following input into the
+search box.
+Zoomers’ OR 1=1 #
+This would build the following SQL statement sent to the interpreter for execution.
+SELECT * FROM shoes WHERE shoeName=’Zoomers’ OR 1=1 #’
+

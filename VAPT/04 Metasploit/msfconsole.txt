@@ -1,0 +1,22 @@
+msfconsole
+
+use use exploit/windows/smb/ms17_010_eternalblue
+
+show options
+set options
+
+show payloads
+Search
+
+One of the most useful commands in msfconsole is search. This command will search the Metasploit Framework database for modules relevant to the given search parameter. You can conduct searches using CVE numbers, exploit names (eternalblue, heartbleed, etc.), or target system.
+
+Meterpreter generally means you have obtained an interactive session on a target system.
+
+ The setg command allows you to set the value so it can be used by default across different modules. You can clear any value set with setg using unsetg.
+
+You can use the background command to background the session prompt and go back to the msfconsole prompt.
+
+The sessions command can be used from the msfconsole prompt or any context to see the existing sessions.
+
+To interact with any session, you can use the sessions -i command followed by the desired session number.
+

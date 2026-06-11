@@ -1,0 +1,23 @@
+Targets : 
+Web servers : The web server may be vulnerable to network
+hacking attempts targeting these services in order to gain unauthorized access to
+the web server’s file structure and system files.
+
+Web Applications:   the actual source code running on the web server that provides the
+functionality that web users interact with is the most popular target for web
+hackers
+
+Web Users: the internal users that manage the web application (administrators and
+programmers) and the external users (human clients or customers) of the web
+applications are worthy targets of attacks.
+
+Tools:
+
+Burp Suite
+Zed Attack Proxy similar to Burp suite include free vuln scanner
+Nmap port scanning
+Nikto for Vuln scan 
+Metasploit for exploitation 
+sqlmap for injections
+John the ripper for pass cracking 
+Social Engineering toolkit (set)

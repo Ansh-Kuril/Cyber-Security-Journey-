@@ -1,0 +1,9 @@
+Once you have installed Nessus, you must start the service before using the tool. You will
+only have to issue the "systemctl start nessusd" command in a terminal once and then
+Nessus will run as a persistent service on your system. 
+
+Once the service is running, the
+following steps introduce how to configure Nessus.
+
+1. In a browser, go to https://127.0.0.1:8834/ to start the Nessus configuration
+procedure.

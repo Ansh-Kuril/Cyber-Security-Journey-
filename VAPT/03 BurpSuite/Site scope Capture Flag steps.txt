@@ -1,0 +1,50 @@
+🔹 Steps (Task 10 – Notes Format)
+🧾 Setup & Target Scope
+Open Burp Suite
+Go to Target tab
+Visit the website in your browser (via Burp proxy)
+In Target → Site Map, find the target domain
+Right-click the domain → Add to Scope
+Confirm → target is now in scope
+🌐 Proxy & Traffic Capture
+Go to Proxy → Intercept
+Turn Intercept OFF (so traffic flows automatically)
+Open browser (Burp embedded or your configured browser)
+Browse the website:
+Click all pages
+Visit different endpoints
+Trigger as many requests as possible
+
+👉 This captures all requests/responses
+
+📊 Analyze Captured Data
+Go to Proxy → HTTP History
+Observe:
+Requests (GET, POST)
+Responses
+Status codes
+Parameters
+🌍 Site Map Analysis
+Go to Target → Site Map
+Expand the target domain
+Look for:
+Hidden endpoints
+Different directories
+APIs
+⚠️ Find Abnormal Port (Important Step)
+In Site Map, check if any entry shows:
+Different port (not 80 or 443)
+Example: :8080, :3000, etc.
+
+👉 This is the abnormal port
+
+Click that entry
+Open it in browser → may reveal hidden content / flag
+🚩 Capture the Flag
+Visit the abnormal port URL
+Look for:
+Hidden page
+Debug panel
+Flag displayed
+
+👉 Copy the flag

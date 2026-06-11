@@ -1,0 +1,66 @@
+hackers shifted to
+attacking the web applications that directly interacted with all the internal systems, such
+as database servers, that were now being protected by firewalls and other network
+devices
+ When a user interacts
+with a web site to perform some action, such as logging in or shopping or banking, it’s a
+web application.
+A web server is just a piece of software running on the operating system of a server that
+allows connections to access a web application.
+I nternet Information Services (IIS) on a Windows server and Apache Hypertext Transfe
+Protocol (HTTP) Server on a Linux server.
+
+/etc/shadow: This is where the password hashes for all users of the system reside. This
+is the “keys to the kingdom”!
+■ /usr/lib: This directory includes object files and internal binaries that are not intended
+to be executed by users or shell scripts. All dependency data used by the application
+will also reside in this directory. Although there is nothing executable here, you can
+really ruin somebody’s day by deleting all of the dependency files for an application.
+■ /var/*: This directory includes the files for databases, system logs, and the source code
+for web application itself!
+■ /bin: This directory contains programs that the system needs to operate, such as the
+shells, ls, grep, and other essential and important binaries. bin is short for binary.
+Most standard operating system commands are located here as separate executable
+binary files.
+
+HTTPS is achieved when HTTP is layered on top of the Secur
+Socket Layer/Transport Layer Security (SSL/TLS) protocol, which adds the TLS 
+SSL/TLS to normal HTTP request and responses.
+
+cookie : amazon products inside cart stores at client side
+session : stored at server side like login 
+100	Continue
+101	Switching Protocols
+102	Processing
+200	OK
+201	Created
+202	Accepted
+204	No Content
+206	Partial Content
+300	Multiple Choices
+301	Moved Permanently
+302	Found / Temporary Redirect
+304	Not Modified
+307	Temporary Redirect
+308	Permanent Redirect
+400	Bad Request
+401	Unauthorized
+403	Forbidden
+404	Not Found
+405	Method Not Allowed
+408	Request Timeout
+409	Conflict
+413	Payload Too Large
+429	Too Many Requests
+500	Internal Server Error
+501	Not Implemented
+502	Bad Gateway
+503	Service Unavailable
+504	Gateway Timeout
+
+1xx	Wait
+2xx	Success
+3xx	Go somewhere else
+4xx	You messed up
+5xx	Server messed up
+

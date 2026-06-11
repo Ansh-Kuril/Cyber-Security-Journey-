@@ -1,0 +1,31 @@
+🔹 Site Scope (in BurpSuite)
+
+Definition:
+Site Scope tells Burp Suite which websites (domains, URLs, IPs) you want to focus on during testing.
+
+Why it matters:
+
+Filters traffic (only target site is tracked)
+Reduces noise from other websites (like Google, CDN, etc.)
+Makes testing organized and efficient
+Helps tools like Scanner, Proxy, and Target tab work only on selected scope
+
+Example:
+If you add example.com to scope → Burp will mainly track/analyze traffic from that site.
+
+🔹 Issue Definition
+
+Definition:
+Issue Definition in Burp explains a specific security vulnerability, including:
+
+What the issue is (e.g., XSS, SQLi)
+Severity (Low / Medium / High / Critical)
+How it can be exploited
+How to fix it
+
+Why it matters:
+
+Helps understand vulnerabilities clearly
+Useful for reporting (bug bounty / pentesting reports)
+Gives remediation guidance
+

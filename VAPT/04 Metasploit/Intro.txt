@@ -1,0 +1,19 @@
+Metasploit is the most widely used exploitation framework. Metasploit is a powerful tool that can support all phases of a penetration testing engagement, from information gathering to post-exploitation.
+
+The Metasploit Framework is a set of tools that allow information gathering, scanning, exploitation, exploit development, post-exploitation, and more. 
+msfconsole: The main command-line interface.
+Modules: supporting modules such as exploits, scanners, payloads, etc.
+
+Auxiliary
+
+Any supporting module, such as scanners, crawlers and fuzzers, can be found here.
+
+Encoders
+
+Encoders will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them.
+Signature-based antivirus and security solutions have a database of known threats. 
+
+Evasion
+
+While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software. On the other hand, “evasion” modules will try that, with more or less success.
+

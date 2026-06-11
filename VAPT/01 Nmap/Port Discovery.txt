@@ -1,0 +1,19 @@
+The connect scan can be triggered using -sT. It tries to complete the TCP three-way handshake with every target TCP port.
+ If the TCP port turns out to be open and Nmap connects successfully, Nmap will tear down the established connection.
+
+the SYN scan only executes the first step: it sends a TCP SYN packet. Consequently, the TCP three-way handshake is never completed. The advantage is that this is expected to lead to fewer logs as the connection is never established, and hence, it is considered a relatively stealthy scan. You can select the SYN scan using the -sS flag.
+
+many use UDP. Examples include DNS, DHCP, NTP (Network Time Protocol), SNMP (Simple Network Management Protocol), and VoIP (Voice over IP)
+Nmap offers the option -sU to scan for UDP services.
+
+-F is for Fast mode, which scans the 100 most common ports (instead of the default 1000).
+
+-p[range] allows you to specify a range of ports to scan. For example, -p10-1024 scans from port 10 to port 1024, while -p-25 will scan all the ports between 1 and 25. Note that -p- scans all the ports and is equivalent to -p1-65535 and is the best option if you want to be as thorough as possible.
+
+Tip: The most common services use a port number between 1 and 1024 for either UDP or TCP. These ports are also known as well-known ports. Use -p1-1023 to scan for the well-known ports.
+
+-sT	TCP connect scan – complete three-way handshake
+-sS	TCP SYN – only first step of the three-way handshake
+-sU	UDP scan
+-F	Fast mode – scans the 100 most common ports
+-p[range]	Specifies a range of port numbers – -p- scans all the ports
