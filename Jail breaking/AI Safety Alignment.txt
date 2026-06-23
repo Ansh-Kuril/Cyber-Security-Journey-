@@ -1,0 +1,94 @@
+# AI Safety Alignment, Guardrails & Jailbreaking
+
+## What is AI Safety Alignment?
+
+AI Safety Alignment is the process of training a Large Language Model (LLM) to behave according to human-defined safety principles. A pre-trained model learns knowledge and patterns from data but does not understand ethics, legality, or safety. Alignment techniques such as Reinforcement Learning from Human Feedback (RLHF) teach the model to prefer safe and helpful responses.
+
+## LLM Development Stages
+
+### 1. Pre-Training
+
+The model learns from massive datasets containing books, websites, code, and technical documentation. At this stage, it has knowledge but no safety restrictions.
+
+### 2. Alignment & Guardrails
+
+The model is trained to follow instructions, refuse harmful requests, and generate safer responses using techniques like RLHF.
+
+### 3. AI Red Teaming
+
+Security researchers test the model for vulnerabilities such as jailbreaking, prompt injection, data leakage, and policy bypasses before deployment.
+
+---
+
+## Why Do Models Have "Jails"?
+
+The "jail" is not a real security barrier. It is the model's learned tendency to refuse unsafe requests. AI companies implement these safeguards to reduce harmful outputs such as scams, malware assistance, phishing content, and dangerous instructions.
+
+A key concept is that refusals are **learned probabilities, not hard-coded rules**. The model predicts that refusing is the most appropriate response because of its safety training.
+
+---
+
+## Why Not Use a Rule Book?
+
+Language is complex and context-dependent.
+
+Example:
+
+* "How do I create malware?" → Harmful request
+* "Explain malware behavior for defensive analysis." → Legitimate cybersecurity request
+
+A simple rule-based system would struggle to distinguish between the two. Therefore, modern AI systems rely on a combination of alignment, filters, and contextual understanding rather than fixed rules alone.
+
+---
+
+## AI Safety Layers (Guardrails)
+
+Modern AI systems use multiple layers of protection:
+
+1. Alignment Training
+2. System Prompts
+3. Input Filtering
+4. Output Filtering
+5. AI Red Team Testing
+6. Continuous Monitoring
+
+These layers work together to reduce harmful outputs and improve reliability.
+
+---
+
+## What is Jailbreaking?
+
+Jailbreaking is the process of attempting to bypass a model's safety alignment through carefully crafted prompts, role-playing, context manipulation, or prompt engineering.
+
+Jailbreaking does not usually exploit software vulnerabilities. Instead, it attempts to influence the model's behavior and make compliance more likely than refusal.
+
+---
+
+## Prompt Injection vs Jailbreaking
+
+### Prompt Injection
+
+* Targets AI applications.
+* Uses malicious instructions hidden in documents, websites, emails, or external content.
+* Application-layer attack.
+* Conceptually similar to SQL Injection.
+
+### Jailbreaking
+
+* Targets the AI model directly.
+* Uses crafted prompts to bypass alignment and guardrails.
+* Model-layer attack.
+* Focuses on influencing model behavior.
+
+---
+
+## Key Takeaways
+
+* Pre-trained models have knowledge but no safety controls.
+* Alignment teaches models to prefer safe behavior.
+* Refusals are learned probabilities, not strict rules.
+* Guardrails consist of multiple security layers.
+* Prompt Injection attacks AI applications.
+* Jailbreaking targets AI model behavior and alignment.
+* AI Red Teamers ethically test these weaknesses before deployment.
+* Perfect AI safety remains an unsolved challenge in AI security.

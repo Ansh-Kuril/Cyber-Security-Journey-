@@ -1,0 +1,147 @@
+# Psychology of Model Manipulation (Jailbreaking)
+
+## Overview
+
+Jailbreaking is not a traditional software exploit. Instead of exploiting code vulnerabilities, it manipulates the model's learned behavior and probability predictions to make compliance more likely than refusal.
+
+The goal is to influence the model's decision-making process by exploiting patterns learned during training.
+
+---
+
+## 1. Roleplay Jailbreaking
+
+Roleplay attacks instruct the model to adopt a fictional character, persona, or scenario where normal safety restrictions supposedly do not apply.
+
+### Why It Works
+
+LLMs are trained on large amounts of:
+
+* Books
+* Novels
+* Scripts
+* Stories
+* Roleplaying conversations
+
+When placed in a fictional context, the model may prioritize storytelling patterns over safety behaviors.
+
+### Key Idea
+
+The attacker reframes a harmful request as:
+
+* Fiction
+* Storytelling
+* Hypothetical scenarios
+* Character roleplay
+
+instead of a direct request.
+
+---
+
+## 2. The "Grandma" Exploit
+
+The Grandma exploit uses emotional manipulation to influence the model.
+
+### How It Works
+
+The attacker creates an emotional scenario involving:
+
+* Grief
+* Nostalgia
+* Sympathy
+* Comfort
+
+The harmful request is disguised as:
+
+* A memory
+* A bedtime story
+* Historical storytelling
+
+### Why It Works
+
+The attack combines:
+
+1. Emotional appeal
+2. Roleplay
+3. Context manipulation
+
+This encourages the model to maintain the role rather than focus on safety concerns.
+
+---
+
+## 3. Obfuscation & Encoding
+
+Obfuscation hides the true intent of a request using alternative representations.
+
+### Common Techniques
+
+#### Base64 Encoding
+
+Converting text into Base64 format to bypass simple keyword detection.
+
+#### Leetspeak
+
+Replacing letters with numbers or symbols.
+
+Example:
+
+* hack → h4ck
+
+#### Low-Resource Languages
+
+Using languages that may have weaker safety training coverage.
+
+#### Word Fragmentation
+
+Breaking sensitive words apart.
+
+Examples:
+
+* mal-ware
+* n a p a l m
+
+### Why It Works
+
+Safety filters often rely on pattern recognition and keyword detection. Obfuscation attempts to hide those patterns while preserving meaning.
+
+---
+
+## 4. Instruction Sandwiching
+
+Instruction Sandwiching hides a harmful objective among multiple legitimate tasks.
+
+### Example Structure
+
+1. Explain cybersecurity concepts.
+2. Discuss vulnerabilities.
+3. Describe exploitation techniques.
+4. Request detailed implementation.
+
+Each individual task may appear reasonable, but together they gradually move toward harmful content.
+
+### Why It Works
+
+The model attempts to satisfy all instructions simultaneously, which can create conflicts in safety decision-making.
+
+---
+
+# Core Principle Behind All Jailbreaks
+
+All jailbreak techniques attempt to:
+
+* Manipulate context
+* Influence model behavior
+* Shift probability distributions
+* Make compliance more likely than refusal
+
+Unlike traditional attacks such as SQL Injection or Buffer Overflow, jailbreaking focuses on exploiting the model's learned patterns rather than software vulnerabilities.
+
+---
+
+# Key Takeaways
+
+* Jailbreaking is a model manipulation technique, not a code exploit.
+* Roleplay attacks use fictional characters and scenarios.
+* The Grandma exploit uses emotional manipulation and nostalgia.
+* Obfuscation hides intent through encoding or text transformations.
+* Instruction Sandwiching embeds harmful goals within legitimate requests.
+* All jailbreak techniques aim to bypass alignment by influencing the model's probability-based decision making.
