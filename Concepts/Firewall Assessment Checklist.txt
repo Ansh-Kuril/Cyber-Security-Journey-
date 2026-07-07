@@ -1,0 +1,98 @@
+Firewall Assessment Checklist (Interview & Real-World)
+1. Firewall Information
+☐ Vendor (Fortinet, Palo Alto, Cisco, Sophos, Check Point)
+☐ Model
+☐ Firmware/OS version
+☐ High Availability (HA) configured
+☐ License status
+
+2. Administrative Access
+☐ Default credentials removed
+☐ Strong password policy
+☐ Multi-Factor Authentication (MFA) enabled
+☐ Role-Based Access Control (RBAC) configured
+☐ Management access restricted to trusted IPs
+☐ SSH/HTTPS enabled
+☐ Telnet/HTTP disabled
+☐ Admin activity logging enabled
+
+3. Firewall Rules Review
+☐ No Any → Any → Allow rules
+☐ Rule descriptions/documentation available
+☐ Rules follow the least privilege principle
+☐ No duplicate rules
+☐ No shadowed rules
+☐ No disabled/obsolete rules
+☐ Temporary rules removed after use
+☐ Rule order is optimized
+☐ Default Deny All rule exists
+
+4. Network Objects
+☐ Unused objects removed
+☐ Duplicate objects removed
+☐ Naming conventions followed
+☐ Groups used instead of individual IPs where appropriate
+
+5. NAT Configuration
+☐ Static NAT reviewed
+☐ Dynamic NAT reviewed
+☐ Port forwarding reviewed
+☐ No unnecessary public exposure
+☐ Internal IP addresses properly hidden
+
+6. Services & Ports
+☐ Only required ports open
+☐ Unused services disabled
+☐ Telnet (23) disabled
+☐ SMB (445) not exposed to the Internet
+☐ RDP (3389) restricted
+☐ SSH (22) restricted
+☐ HTTP redirected to HTTPS where applicable
+
+7. VPN Security
+☐ Strong VPN authentication
+☐ MFA enabled
+☐ Secure protocols (IPsec/SSL VPN)
+☐ Weak protocols (PPTP) disabled
+☐ VPN logs enabled
+☐ Split tunneling reviewed
+
+8. Security Features
+☐ Intrusion Prevention System (IPS) enabled
+☐ Antivirus enabled (if supported)
+☐ Web filtering enabled
+☐ Application control enabled
+☐ Anti-malware protection enabled
+☐ SSL/TLS inspection configured where appropriate
+
+9. Logging & Monitoring
+☐ Traffic logging enabled
+☐ Security event logging enabled
+☐ Failed login logging enabled
+☐ Configuration change logging enabled
+☐ Logs forwarded to SIEM/Syslog
+☐ Log retention policy defined
+
+10. Firmware & Patch Management
+☐ Latest firmware installed
+☐ Known vulnerabilities checked
+☐ Security patches applied
+☐ End-of-life devices identified
+
+11. High Availability (HA)
+☐ HA configured (if required)
+☐ Failover tested
+☐ Configuration synchronized
+☐ Heartbeat functioning
+
+12. DMZ Review
+☐ Public servers placed in DMZ
+☐ No direct Internet-to-LAN access
+☐ Only necessary ports allowed
+☐ Internal network isolated from DMZ
+
+13. Compliance
+☐ Organization's firewall policy followed
+☐ Firewall rule review performed periodically
+☐ Configuration backup available
+☐ Change management process followed

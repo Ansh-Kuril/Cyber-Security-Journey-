@@ -1,0 +1,56 @@
+ MITRE ATT&CK FRAMEWORK
+
+ADVESARY 
+TACTICS
+TECHNIQUES
+COMMON KNOWLEDGE
+
+3 Matrixes
+
+Enterprise (windows Linux google macos)
+Mobile ( android ios )
+ICS ( industrial infrastructure )
+
+Tactics 
+Gaining acces 
+matininng persistence 
+establishing command and control 
+total 13 tactics 
+
+TEchinques
+under tactics 
+
+Cyber kill cahin vs Mitre attack 
+
+cyber kill chian says hackers follow specific frameworks 
+mitre attacks dosent cliam this
+
+mitre attack for read team 
+
+how to use 
+
+attack simulations 
+testing controls
+caldra tool 
+
+identify securty gaps 
+phishing simulation 
+
+efective security controls 
+
+align security strategies 
+communication to board
+security investments
+
+How compines use this mitre attack 
+crwodstrike 
+cisco securex
+microsoft sentinal
+
+tool
+caledra 
+mitre attack navigator
+atomic red team 
+metta
+sandbox scryer
+

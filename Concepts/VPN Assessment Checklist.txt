@@ -1,0 +1,93 @@
+VPN Assessment Checklist
+1. Check Authentication
+
+Questions:
+
+Is MFA enabled?
+Are default accounts disabled?
+Are passwords strong?
+Are shared accounts used?
+2. Check Encryption
+
+Verify:
+
+AES-256 encryption
+SHA-256 or stronger hashing
+Modern TLS versions
+Strong key exchange
+
+Avoid:
+
+DES
+3DES (legacy)
+RC4
+MD5
+SHA-1 (where stronger options are available)
+3. Verify VPN Protocol
+
+Preferred:
+
+IPsec
+SSL VPN
+OpenVPN
+WireGuard
+
+Avoid:
+
+PPTP
+4. Split Tunneling
+
+Split tunneling allows Internet traffic to bypass the VPN while only company traffic goes through it.
+
+Example:
+
+Laptop
+   │
+ ├── Internet (Direct)
+ └── Company (VPN)
+
+Risk: An infected device can potentially act as a bridge between the Internet and the corporate network.
+
+Many organizations disable split tunneling for higher security.
+
+5. Idle Session Timeout
+
+Ensure idle VPN sessions disconnect automatically after a defined period.
+
+Example:
+
+Disconnect after 15–30 minutes of inactivity.
+6. VPN Logging
+
+Check whether logs record:
+
+Login attempts
+Failed logins
+Successful logins
+Source IPs
+Session duration
+Administrative changes
+
+Logs are important for monitoring and incident response.
+
+7. Access Control
+
+Users should only access the resources they need.
+
+Example:
+
+HR User
+→ HR Server
+
+IT Admin
+→ Entire Network
+
+This follows the principle of least privilege.
+
+8. Patch Management
+
+Verify:
+
+VPN gateway firmware is current.
+Security patches are applied.
+No known vulnerabilities remain unaddressed.
