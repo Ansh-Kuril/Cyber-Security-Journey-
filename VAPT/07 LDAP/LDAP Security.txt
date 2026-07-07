@@ -1,0 +1,67 @@
+LDAP Security
+
+Best practices:
+
+Use LDAPS (636) or LDAP with StartTLS.
+Disable anonymous binds unless required.
+Enforce strong authentication (Kerberos/SASL where possible).
+Apply least privilege to directory permissions.
+Monitor LDAP queries for suspicious activity.
+Require strong passwords and account lockout policies.
+
+-----------------------------------------------------------------------------------------------
+18. LDAP Attacks
+
+These are common in Active Directory penetration testing.
+-------------------------------------------------------------
+Anonymous Enumeration
+
+If anonymous bind is enabled:
+
+Attackers can enumerate:
+
+users
+groups
+computers
+domain info
+
+without authentication.
+----------------------------------------------------------
+LDAP Injection
+
+Similar to SQL Injection.
+
+Unsafe user input is inserted into LDAP filters.
+
+Example (vulnerable):
+
+(&(uid=<user_input>))
+
+If not properly escaped, an attacker may alter the filter logic and retrieve unauthorized results.
+-------------------------------------------------------------------------------------------------------------------
+Password Spraying
+
+One common password
+
+Welcome123
+
+against many users.
+
+LDAP often becomes the authentication endpoint used during such attacks.
+--------------------------------------------------------------------------------------
+Credential Harvesting
+
+If LDAP traffic is unencrypted (simple bind without TLS), usernames and passwords may be captured by an attacker on the network.
+-----------------------------------------------------------------------------------------------------------------------------
+Excessive Enumeration
+
+Attackers use LDAP to discover:
+
+Domain Admins
+Service Accounts
+Computers
+Group Memberships
+Organizational Units (OUs)
+Trust relationships (often combined with other protocols)
+
+This reconnaissance is a key step before privilege escalation.

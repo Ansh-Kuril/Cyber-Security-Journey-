@@ -1,0 +1,35 @@
+An LDAP search query consists of several components, each serving a specific function in the search operation:
+
+Base DN (Distinguished Name): This is the search's starting point in the directory tree.
+----------------------------------------------------------------------------------------------------------------
+Scope: Defines how deep the search should go from the base DN. It can be one of the following:
+
+base (search the base DN only),
+-----
+one (search the immediate children of the base DN),
+-----
+sub (search the base DN and all its descendants).
+-----
+Filter: A criteria entry must match to be returned in the search results. It uses a specific syntax to define these criteria.
+-------
+Attributes: Specifies which characteristics of the matching entries should be returned in the search results.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+The basic syntax for an LDAP search query looks like this:
+
+(base DN) (scope) (filter) (attributes)
+----------------------------------------------------------------------
+LDAP filters can use a variety of operators to refine search criteria, including equality (=), presence (=*), greater than (>=), and less than (<=).
+
+(cn=J*)
+This filter applies the wildcard operator to match any entry where the cn begins with "J", regardless of what follows.
+
+(&(objectClass=user)(|(cn=John*)(cn=Jane*)))
+This filter searches for entries classified as "user" in their object class with a canonical name starting with either "John" or "Jane".
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+DAP services can be accessible over the network via ports 389 (for unencrypted or StartTLS connections) and 636 (for SSL/TLS connections). 
+
+ldapsearch -x -H ldap://10.49.144.80:389 -b "dc=ldap,dc=thm" "(ou=People)"
+
+This command uses ldapsearch to perform a search against an LDAP server located at the vulnerable machine on port 389, starting at the base DN dc=ldap,dc=thm and using a filter that will search for entries under the organizational unit of People.
+This tells ldapsearch to use simple authentication or anonymous bind instead of SASL (Simple Authentication and Security Layer).
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

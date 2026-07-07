@@ -1,0 +1,121 @@
+LDAP stands for
+
+Lightweight Directory Access Protocol
+
+It is a protocol used to:
+
+store
+organize
+search
+retrieve
+modify
+
+information from a Directory Service.
+
+Think of LDAP as Google Search for company information.
+
+Instead of searching the internet, LDAP searches a company's internal directory.
+
+Example:
+
+A company has
+
+20,000 employees
+3,000 computers
+400 printers
+600 groups
+15 servers
+
+LDAP allows applications to instantly locate any of them.
+In a Directory Service.
+LDAP is simply the language used to talk to that directory.
+ldap also supports authentication mechanism 
+
+user logs in > ldap searches for user > allow login 
+
+A directory is a specialized database optimized for reading rather than frequent writing.
+
+Example:
+
+    Database	                  Directory
+Frequently updated	        Rarely updated
+Complex transactions	        Fast searching
+Banking systems	               Employee records
+E-commerce	               Active Directory
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Distinguished Name (DN)
+
+Every object has a unique full path.
+
+Example
+
+cn=John Doe, ou=Users, dc=company, dc=com
+
+Breakdown
+
+cn = Common Name
+
+ou = Organizational Unit
+
+dc = Domain Component
+
+This is like a full home address.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+LDAP Operations
+Bind
+Authentication.
+
+Like logging in.
+---------------------
+
+Search
+Find information.
+Example
+Find all HR employees.
+---------------------------
+
+Compare
+Compare stored values.
+
+Example
+Is department = IT?
+------------------------
+
+Add
+Create new object.
+--------------------
+
+Modify
+Update attributes.
+-------------------
+
+Delete
+Delete object.
+-------------------------
+
+Unbind
+Disconnect.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+LDAP Query Example
+
+Find all IT employees.
+
+(&(department=IT))
+-----------------------
+Find all users.
+
+(objectClass=user)
+-------------------
+Find John.
+
+(cn=John*)
+------------------
+Find disabled accounts.
+
+(userAccountControl=514)

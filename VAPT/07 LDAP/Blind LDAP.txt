@@ -1,0 +1,17 @@
+Blind LDAP Injection is a more subtle variant of LDAP Injection, where the attacker doesn't receive direct output from the injected payload. Instead, they must infer information based on the application's behaviour. This type of attack is more challenging but can still be used to extract sensitive information from an LDAP directory.
+
+Blind LDAP Injection requires a different approach due to the lack of explicit query results. Attackers must rely on indirect signs, such as changes in application behaviour, error messages, or response timings, to deduce the structure of the LDAP query and the existence of vulnerabilities.
+
+This code is vulnerable to Blind LDAP Injection because it constructs an LDAP filter using unsanitized user input. However, it only provides vague feedback, making it challenging to exploit directly.
+
+To exploit this vulnerability, an attacker can use a technique known as Boolean-based Blind LDAP Injection. The attacker injects conditions into the username field to make the LDAP query true or false, observing the application's behaviour to infer information.
+
+For example, an attacker might try injecting a username like a*)(|(&, which, when included in the LDAP query, checks for any user with "a" in their uid exists:
+
+If the application returns "Something is wrong in your password", the attacker can infer that a user with an account that starts with "a" in their uid exists in the LDAP directory. To check for the next character, an attacker can reiterate the payload with the next character, for example: ab*)(|(&
+
+Techniques for Extracting Information
+
+Boolean Exploitation: This involves injecting conditions that are evaluated to be true or false and observing the application's response to infer data. For example, if the application behaves differently when the condition is true, the attacker can deduce that the injected condition matches an existing entry in the LDAP directory.
+
+Error-Based Inference: In some cases, specific injections might trigger error messages or peculiar application behaviour, providing clues about the LDAP structure or confirming the success of particular payloads.
