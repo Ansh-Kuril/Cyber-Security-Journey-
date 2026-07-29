@@ -1,0 +1,15 @@
+CASE STUDY 
+
+>NOTE : Security starts with keep it simple so client dont have time to answer all the questions they just tell you this is my company how to implement this thats it 
+
+. Implementing ISO 27001:2022 in AZPirantz Consulting Firm 
+. Company Overview
+
+  >Name : Azpirantz Consulting Firm
+  >Location : Noida, India 
+  >Industry : Consulting and Informatino Security Training 
+  >Objective : To implement and ISMS according to ISO 27001:2022 and achive certification
+
+
+GOTO GOOGLE SHEETS > OPEN TEMPLATES > CHOOSE GANNT CHART TEMPLATE 
+

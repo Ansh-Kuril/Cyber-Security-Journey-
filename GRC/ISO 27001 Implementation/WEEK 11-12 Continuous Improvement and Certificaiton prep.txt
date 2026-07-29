@@ -1,0 +1,45 @@
+WEEK 11-12: Continuous Improvement and Certification Preparation
+
+DAY 48-51: Treatment of Nonconformities (Clause 10.2)
+
+1. Objective: Correct any non-conformities identified during internal or external audits and prevent their recurrence.
+
+2. Activities:
+
+   >Implement Corrective Actions: The consultant works with the ISMS team to address identified non-conformities by implementing corrective actions, such as improving access control measures, updating security policies, or enhancing employee training programs.
+
+Verify Effectiveness: Follow-up audits and reviews are conducted to ensure that the corrective actions have effectively resolved the non-conformities and prevented recurrence.
+
+3. Documentation Created:
+
+   >Corrective Action Reports (CAR): Documents the identified non-conformities, root cause analysis, corrective actions taken, responsible persons, implementation status, and verification of effectiveness.
+---------------------------------------------------------------------------
+DAY 52-55: Continual Improvement (Clause 10.1)
+
+1. Objective: Ensure the Information Security Management System (ISMS) is continually improved to remain effective and aligned with business needs.
+
+2. Activities:
+
+   >Identify Improvements: The consultant and ISMS team identify opportunities for improvement based on audit findings, employee feedback, training sessions, security incidents, risk assessments, and management review outcomes.
+
+    >Implement Changes: Necessary updates are made to policies, procedures, risk treatment plans, and security controls to enhance the effectiveness and maturity of the ISMS.
+
+3. Documentation Created:
+
+   >Improvement Plan: Documents the improvement opportunities identified, actions taken, implementation timelines, responsible personnel, and the impact of changes on the ISMS.
+-----------------------------------------------------------------------------
+DAY 56-60: Certification Audit Preparation
+
+1. Objective: Prepare the organization for the final ISO/IEC 27001:2022 certification audit.
+
+2. Activities:
+
+   >Final Documentation Review: The consultant ensures that all ISMS documentation—including policies, procedures, risk assessments, Statement of Applicability (SoA), audit reports, and records—is complete, accurate, and up to date.
+
+   >Mock Audit: A mock certification audit is conducted to simulate the actual audit process, identify any remaining gaps, and ensure the organization is fully prepared for the official certification audit.
+
+3. Documentation Created:
+
+   >Audit Checklists: Comprehensive checklists confirming that all ISO 27001 requirements and ISMS documentation have been reviewed and are ready for certification.
+
+   >Final Documentation Review Report: Confirms that the organization has completed all required documentation, addressed outstanding issues, and is prepared for the certification audit.

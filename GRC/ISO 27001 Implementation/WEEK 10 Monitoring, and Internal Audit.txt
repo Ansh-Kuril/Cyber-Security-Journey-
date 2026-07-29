@@ -1,0 +1,47 @@
+WEEK 10: Monitoring, Review, and Internal Audit
+
+DAY 39-41: Monitor and Measure ISMS Performance (Clause 9.1)
+
+1. Objective:
+   >Continuously monitor and measure the effectiveness of the Information Security Management System (ISMS).
+
+2. Activities:
+
+   >Establish Metrics: The organization establishes Key Performance Indicators (KPIs) such as the number of security incidents detected, average incident response time, and compliance with internal security policies.
+
+   >Regular Monitoring: The consultant advises on tools and techniques to continuously monitor these metrics and evaluate the performance of the ISMS.
+
+3. Documentation Created:
+
+   >Monitoring and Measurement Records: Logs of security incidents, audit findings, KPI reports, monitoring results, and overall ISMS performance records.
+-------------------------------------------------------------------------------
+DAY 42-44: Conduct Internal Audits (Clause 9.2)
+
+1. Objective:
+   >Verify the ISMS's compliance and effectiveness.
+
+2. Activities:
+
+   >Audit Planning: The consultant develops an internal audit plan covering all ISMS-related processes, audit scope, criteria, schedule, and assigned auditors.
+
+   >Conduct Audits: Internal audits are conducted to verify compliance with ISO 27001:2022 requirements, identify non-conformities, assess the effectiveness of implemented controls, and recommend corrective actions.
+
+3. Documentation Created:
+
+   >Internal Audit Reports: Summarize audit findings, non-conformities, observations, evidence collected, and recommendations for corrective actions.
+--------------------------------------------------------------------------------
+DAY 45-47: Management Review (Clause 9.3)
+
+1. Objective:
+
+   >Review the performance and effectiveness of the Information Security Management System (ISMS) at the management level.
+
+2. Activities:
+
+   >Prepare Review Documents: The consultant compiles internal audit reports, performance metrics, incident logs, risk assessment updates, and other relevant documents for the management review meeting.
+
+   >Conduct the Review: Top management reviews the effectiveness of the ISMS, evaluates security objectives, identifies opportunities for improvement, reviews resource requirements, and decides on any necessary changes to policies, procedures, or controls.
+
+3. Documentation Created:
+
+   >Management Review Minutes: Records the meeting discussions, decisions made, action items, responsibilities assigned, and timelines for implementation.
