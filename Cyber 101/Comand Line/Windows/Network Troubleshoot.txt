@@ -1,0 +1,160 @@
+# Windows Networking Commands
+
+## 1. `ping`
+
+### Purpose
+Tests connectivity between your computer and another device by sending ICMP Echo Request packets.
+
+### Syntax
+```cmd
+ping <hostname/IP>
+```
+
+### Example
+```cmd
+ping google.com
+ping 8.8.8.8
+```
+
+### Common Uses
+- Check if a host is reachable.
+- Test internet connectivity.
+- Measure network latency (response time).
+
+**Interview Definition:**  
+`ping` checks network connectivity by sending ICMP Echo Request packets to a remote host and measuring the response.
+
+---
+
+## 2. `ipconfig`
+
+### Purpose
+Displays the IP configuration of your computer.
+
+### Syntax
+```cmd
+ipconfig
+```
+
+### Common Options
+
+| Command | Purpose |
+|---------|---------|
+| `ipconfig` | Display basic IP configuration. |
+| `ipconfig /all` | Display detailed network configuration. |
+| `ipconfig /release` | Release the current IP address. |
+| `ipconfig /renew` | Request a new IP address from DHCP. |
+| `ipconfig /flushdns` | Clear the DNS resolver cache. |
+
+### Information Displayed
+- IPv4 Address
+- IPv6 Address
+- Subnet Mask
+- Default Gateway
+
+**Interview Definition:**  
+`ipconfig` displays and manages the IP configuration of network adapters.
+
+---
+
+## 3. `tracert`
+
+### Purpose
+Shows the path (route) that packets take to reach a destination.
+
+### Syntax
+```cmd
+tracert <hostname/IP>
+```
+
+### Example
+```cmd
+tracert google.com
+```
+
+### Common Uses
+- Identify where network delays occur.
+- Troubleshoot routing problems.
+- View each router (hop) between source and destination.
+
+**Interview Definition:**  
+`tracert` traces the route packets take to a destination by displaying each network hop.
+
+---
+
+## 4. `nslookup`
+
+### Purpose
+Queries DNS servers to obtain domain name or IP address information.
+
+### Syntax
+```cmd
+nslookup <domain/IP>
+```
+
+### Examples
+```cmd
+nslookup google.com
+nslookup 8.8.8.8
+```
+
+### Common Uses
+- Resolve domain names to IP addresses.
+- Perform reverse DNS lookups.
+- Troubleshoot DNS issues.
+
+**Interview Definition:**  
+`nslookup` queries DNS servers to resolve domain names and IP addresses.
+
+---
+
+## 5. `netstat`
+
+### Purpose
+Displays active network connections, listening ports, routing tables, and network statistics.
+
+### Syntax
+```cmd
+netstat
+```
+
+### Common Options
+
+| Command | Purpose |
+|---------|---------|
+| `netstat` | Display active connections. |
+| `netstat -a` | Display all active connections and listening ports. |
+| `netstat -b` | Show the executable (program) associated with each connection. *(Administrator required)* |
+| `netstat -o` | Display the Process ID (PID) for each connection. |
+| `netstat -n` | Display IP addresses and port numbers numerically (no DNS resolution). |
+
+### Common Uses
+- View open network connections.
+- Identify listening ports.
+- Find which process owns a connection.
+- Troubleshoot network issues.
+- Detect suspicious connections.
+
+**Interview Definition:**  
+`netstat` displays active network connections, listening ports, routing information, and network statistics.
+
+---
+
+# Quick Revision
+
+| Command | Purpose |
+|---------|---------|
+| `ping` | Test network connectivity and measure response time. |
+| `ipconfig` | Display and manage IP configuration. |
+| `tracert` | Show the path packets take to a destination. |
+| `nslookup` | Query DNS to resolve domain names and IP addresses. |
+| `netstat` | Display active network connections and listening ports. |
+
+### `netstat` Options
+
+| Option | Description |
+|--------|-------------|
+| `-a` | Displays all active connections and listening ports. |
+| `-b` | Shows the executable (program) associated with each connection. *(Admin required)* |
+| `-o` | Displays the Process ID (PID) associated with each connection. |
+| `-n` | Displays addresses and port numbers in numerical format (no DNS resolution). |

@@ -1,0 +1,154 @@
+# Windows Command Notes
+
+## 1. `set`
+
+### Purpose
+Displays, creates, or modifies **environment variables** in the current Command Prompt session.
+
+### Syntax
+```cmd
+set
+set VARIABLE=value
+```
+
+### Examples
+```cmd
+set
+set name=Ansh
+echo %name%
+```
+
+### Common Uses
+- View all environment variables.
+- Create temporary variables.
+- Modify variables for the current session.
+
+**Interview Definition:**  
+`set` is used to display, create, or modify environment variables in the current Command Prompt session.
+
+---
+
+## 2. `ver`
+
+### Purpose
+Displays the installed Windows operating system version.
+
+### Syntax
+```cmd
+ver
+```
+
+### Example Output
+```text
+Microsoft Windows [Version 10.0.26100.4652]
+```
+
+### Common Uses
+- Check Windows version.
+- Verify OS during troubleshooting.
+
+**Interview Definition:**  
+`ver` displays the current Windows operating system version.
+
+---
+
+## 3. `driverquery`
+
+### Purpose
+Displays a list of all installed device drivers.
+
+### Syntax
+```cmd
+driverquery
+```
+
+### Common Uses
+- View installed drivers.
+- Troubleshoot hardware issues.
+- Audit system drivers.
+
+**Interview Definition:**  
+`driverquery` lists all installed device drivers on a Windows system.
+
+---
+
+## 4. `driverquery | more`
+
+### Purpose
+Displays the driver list **one page at a time**.
+
+### Syntax
+```cmd
+driverquery | more
+```
+
+### Difference from `driverquery`
+
+| `driverquery` | `driverquery \| more` |
+|---------------|-----------------------|
+| Displays all output at once. | Displays output one page at a time. |
+| Output may scroll too quickly. | Easier to read long output. |
+
+### About `|` (Pipe)
+The **pipe (`|`)** sends the output of one command as the input to another command.
+
+Example:
+```cmd
+driverquery | more
+```
+
+- `driverquery` → Generates driver list.
+- `more` → Displays it page by page.
+
+**Interview Definition:**  
+`driverquery | more` sends the output of `driverquery` to the `more` command, allowing the results to be viewed one screen at a time.
+
+---
+
+## 5. `systeminfo`
+
+### Purpose
+Displays detailed information about the computer and operating system.
+
+### Syntax
+```cmd
+systeminfo
+```
+
+### Information Displayed
+- OS Name
+- OS Version
+- System Manufacturer
+- System Model
+- BIOS Version
+- Processor
+- RAM
+- Domain/Workgroup
+- Boot Time
+- Network Adapter(s)
+- Hotfixes Installed
+
+### Example
+```cmd
+systeminfo
+```
+
+### Common Uses
+- Collect system information.
+- Troubleshoot hardware/software issues.
+- Verify system specifications.
+
+**Interview Definition:**  
+`systeminfo` displays detailed configuration information about the Windows operating system and computer hardware.
+
+---
+
+# Quick Revision
+
+| Command | Purpose |
+|---------|---------|
+| `set` | View, create, or modify environment variables. |
+| `ver` | Display Windows version. |
+| `driverquery` | List installed device drivers. |
+| `driverquery \| more` | Show driver list page by page using `more`. |
+| `systeminfo` | Display detailed system and OS information. |
