@@ -1,0 +1,82 @@
+Trust Services Criteria (TSC)
+
+SOC 2 revolves around five Trust Services Criteria.
+
+Think of them as the five pillars.
+----------------------------------------------------------
+1. Security (Mandatory)
+
+Protect systems against unauthorized access.
+
+Examples
+
+MFA
+Firewalls
+Antivirus
+IAM
+Encryption
+SIEM
+Logging
+
+Without Security,
+
+No SOC 2.
+--------------------------------------------------------------
+2. Availability
+
+Is the system available when customers need it?
+
+Examples
+
+Backups
+Disaster Recovery
+Redundant servers
+UPS
+Monitoring
+
+Example
+
+Google Drive should not be offline for three days.
+------------------------------------------------------------------
+3. Processing Integrity
+
+Does the system process data correctly?
+
+Example
+
+Online banking.
+
+You transfer $100.
+
+System should transfer exactly $100.
+
+Not $10.
+
+Not $1,000.
+------------------------------------------------------------------------
+4. Confidentiality
+
+Sensitive information stays confidential.
+
+Examples
+
+Encryption
+Access Control
+NDA
+Secure Disposal
+
+Only authorized users can access data.
+-----------------------------------------------------------------------
+5. Privacy
+
+Personal information is collected and handled properly.
+
+Examples
+
+Consent
+Data retention
+Cookie policy
+Right to delete data
+Privacy notices
+
+Mostly about Personally Identifiable Information (PII).

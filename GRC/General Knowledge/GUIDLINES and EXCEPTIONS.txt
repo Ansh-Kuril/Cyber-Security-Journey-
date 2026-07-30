@@ -1,0 +1,82 @@
+GUIDLINES
+
+> Recommendations on some concepts, technology or risk
+
+.wording in guidelines matters
+. avoid words like shall, Will or Must
+
+Guideline = "Recommended Best Practice"
+
+A guideline is not mandatory.
+
+It's advice.
+
+Car example:
+
+Keep both hands on the steering wheel.
+
+Good idea.
+
+But sometimes you need one hand to shift gears.
+
+GRC Example
+
+It is recommended to use a password manager.
+
+Nobody forces you.
+
+It's simply considered best practice.
+
+Another example:
+
+Employees are encouraged to lock their computers whenever they leave their desk.
+
+Recommended, but may not always be mandatory.
+
+Memory Trick
+
+Guideline = Good Advice
+
+EXCEPTIONS 
+
+> Avoid controls to business needs
+
+>document Exceptions:
+
+.Why can we not meet the requirements
+.What are the associated risk to the exceptions
+.plan of action and milestones (POA&Ms) to meet resurgent
+
+Exception = "Permission to break the rule"
+
+Sometimes a rule cannot be followed for a valid reason.
+
+That's an exception.
+
+Car example:
+
+Normally:
+
+Stop at every red light.
+
+Exception:
+
+Police officer waves you through.
+
+You're allowed to break the normal rule.
+
+GRC Example
+
+Policy:
+
+USB drives are prohibited.
+
+Exception:
+
+The Security Manager approves a USB for a forensic investigation.
+
+Rule temporarily broken—with approval.
+
+Memory Trick
+
+Exception = Special Permission

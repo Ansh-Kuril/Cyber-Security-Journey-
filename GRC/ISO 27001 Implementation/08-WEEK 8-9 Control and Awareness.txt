@@ -1,0 +1,32 @@
+WEEK 8-9: Implementation of Controls and Awareness
+
+DAY 31-35: Operational Planning and Control (Clause 8.1)
+
+1. Objective:
+
+   >Implement the selected information security controls within the organization.
+
+2. Activities:
+
+   >Technical Controls: The IT department, guided by the consultant, implements technical controls such as firewalls, encryption for sensitive data, and regular software updates.
+
+   >Administrative Controls: Procedures such as regular internal audits, access reviews, and other administrative controls are established to ensure the effectiveness of the ISMS.
+
+3. Documentation Created:
+
+   >Control Implementation Records: Documentation containing details of each implemented control, the responsible parties, implementation dates, and evidence of completion.
+
+DAY 36-38: Conduct Awareness and Training Programs (Clause 7.2)
+
+1. Objective:
+   >Ensure all staff understand their role in maintaining information security.
+
+2. Activities:
+
+   >Develop Training Materials: The consultant develops training modules on topics such as phishing awareness, password security, and incident reporting.
+
+   >Conduct Training: All employees, from IT staff to administrative personnel, participate in training sessions to familiarize themselves with the ISMS policies and procedures.
+
+3. Documentation Created:
+
+   >Training Records: Includes attendance logs, training materials, assessment results, and feedback forms.

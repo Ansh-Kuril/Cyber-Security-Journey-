@@ -1,0 +1,71 @@
+SOC 2 (System and Organization Controls 2) is an audit framework developed by the AICPA (American Institute of Certified Public Accountants).
+
+It helps organizations prove that they protect customer data securely.
+
+Simply put:
+
+SOC 2 is a report that proves a company has proper security controls to protect customer information.
+---------------------------------------------------------------------------------------------------------
+Why was SOC 2 created?
+
+Imagine you're buying cloud storage.
+
+Would you upload your company data to a random website?
+
+Probably not.
+
+You'd ask:
+
+Is my data secure?
+Can hackers steal it?
+Do they take backups?
+Do employees misuse my data?
+
+SOC 2 answers those questions.
+-------------------------------------------------------------------------------------------------
+Real Example
+
+Imagine:
+
+Company A develops payroll software.
+
+Their customer asks:
+
+"How do we know your system is secure?"
+
+Instead of saying
+
+"Trust us."
+
+They provide a
+
+SOC 2 Type II Report
+
+Now the customer knows
+
+Controls exist
+Auditor verified them
+Security processes work
+---------------------------------------------------------------------------------
+What is audited?
+
+Not software.
+
+Not source code.
+
+Not applications.
+
+The auditor checks
+
+The company's controls.
+
+Examples
+
+Password policy
+Access management
+Employee onboarding
+Vendor management
+Incident response
+Backups
+Monitoring
+Risk management

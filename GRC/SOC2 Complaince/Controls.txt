@@ -1,0 +1,74 @@
+Controls
+
+SOC 2 contains lots of controls.
+
+Examples
+
+Access Control
+
+MFA
+RBAC
+Least Privilege
+Account Lockout
+-------------------------------
+HR Security
+
+Background Verification
+NDA
+Exit Process
+Access Revocation
+-----------------------------
+Physical Security
+
+CCTV
+Visitor Logs
+Biometric Entry
+Server Room Locks
+----------------------------
+Network Security
+
+Firewalls
+IDS/IPS
+VPN
+Network Segmentation
+--------------------------
+Data Protection
+
+Encryption
+Key Management
+Secure Disposal
+DLP
+---------------------------
+Incident Management
+
+Incident Response Plan
+Escalation Matrix
+Root Cause Analysis
+-------------------------
+Change Management
+
+Change Requests
+CAB Approval
+Testing
+Rollback Plans
+------------------------
+Vendor Management
+
+Vendor Risk Assessment
+Security Questionnaire
+NDA
+Contracts
+----------------------
+Monitoring
+
+SIEM
+Logs
+Alerts
+Vulnerability Scans
+---------------------------
+Business Continuity
+
+DR Plan
+Backup
+Restore Testing
+BCP

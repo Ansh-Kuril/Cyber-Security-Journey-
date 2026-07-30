@@ -1,0 +1,52 @@
+SOC 2 Type I vs Type II
+
+Type I
+
+Question:
+
+Do controls exist?
+
+Auditor checks on one specific date.
+
+Example
+
+Audit date
+
+1 July
+
+Auditor checks
+
+Firewall exists.
+
+Done.
+-------------------------------------------------------
+Type II
+
+Question:
+
+Did controls actually work over time?
+
+Usually tested for
+
+3–12 months.
+
+Example
+
+Firewall existed.
+
+Was it monitored every day?
+
+Were logs reviewed?
+
+Were incidents handled?
+
+This provides stronger assurance.
+-------------------------------------------------------
+Comparison
+
+Type I	                         Type II
+
+Point in time	                 Period of time
+Design of controls	         Design + operating effectiveness
+Faster	                         More rigorous
+Easier	                         Preferred by customers

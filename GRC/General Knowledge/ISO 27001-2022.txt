@@ -1,0 +1,53 @@
+ISO 27001:2022
+
+ISO/IEC 27001:2022 is an international standard for Information Security Management Systems (ISMS).
+
+It tells organizations how to protect their information using a structured management system.
+-------------------------------------------------------------------------------------------------
+ISO
+= International Organization for Standardization
+
+IEC
+= International Electrotechnical Commission
+
+27001
+= Standard number for Information Security Management Systems
+
+2022
+= Latest version released in 2022
+-----------------------------------------------------------------------------------------------
+Annex A (Most Important Part)
+
+ISO 27001:2022 contains 93 security controls, grouped into four themes.
+
+Theme	                 Examples
+
+Organizational	      Policies, roles, risk management
+People	              Background verification, awareness, training
+Physical	      CCTV, visitor logs, server room access
+Technological	      Firewalls, MFA, encryption, backups
+-----------------------------------------------------------------------------------------
+ISO 27001 has 10 clauses.
+
+Clause	Name	                       Mandatory?
+
+1	Scope	                       Informational
+2	Normative References	       Informational
+3	Terms & Definitions	       Informational
+4	Context of the Organization	   yes
+5	Leadership	                   yes
+6	Planning	                   yes
+7	Support	                           yes
+8	Operation	                   yes
+9	Performance Evaluation	           yes
+10	Improvement	                   yes
+
+Only Clauses 4–10 contain requirements for certification.
+
+Where are we? → Clause 4
+Who is leading? → Clause 5
+What's our plan? → Clause 6
+Do we have resources? → Clause 7
+Start treating patients → Clause 8
+Is everything working? → Clause 9
+Improve mistakes → Clause 10

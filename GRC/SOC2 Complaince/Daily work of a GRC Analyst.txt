@@ -1,0 +1,47 @@
+Daily work of a GRC Analyst
+
+Typical tasks include:
+
+Writing policies
+Reviewing evidence
+Tracking compliance
+Following up with teams
+Conducting internal audits
+Vendor risk assessments
+Managing risks
+Preparing audit evidence
+Gap assessments
+Updating documentation
+
+--------------------------------------------------
+Typical Audit Flow
+
+Company wants SOC 2.
+
+↓
+
+Gap Assessment.
+
+↓
+
+Fix gaps.
+
+↓
+
+Implement controls.
+
+↓
+
+Collect evidence.
+
+↓
+
+Internal review.
+
+↓
+
+External audit.
+
+↓
+
+Auditor issues report.

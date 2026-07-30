@@ -1,0 +1,42 @@
+What does an Auditor verify?
+
+Examples
+--------------------------
+Password Policy
+
+Evidence
+
+Policy document
+Screenshot
+Password settings
+-------------------------------
+Access Review
+
+Evidence
+
+User access list
+Manager approvals
+Review records
+-----------------------------------
+Employee Training
+
+Evidence
+
+Training records
+Certificates
+Attendance logs
+----------------------------------
+Incident Response
+
+Evidence
+
+Incident tickets
+Root Cause Analysis (RCA)
+Lessons learned
+-----------------------------------
+Backup
+
+Evidence
+
+Backup logs
+Restore test results

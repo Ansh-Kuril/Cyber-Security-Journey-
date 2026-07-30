@@ -1,0 +1,81 @@
+STANDARDS
+
+> Mandatoru reqirmemt of carryiong out information security policies 
+
+Example : Requied configuration settings
+
+.change more frequently that polices
+.migh define a "Minimum" requirement 
+
+Standard = "HOW GOOD should it be?"
+
+A standard gives specific measurable requirements that everyone must follow.
+
+Continuing the car example:
+
+Policy:
+
+Wear a seatbelt.
+
+Standard:
+
+The seatbelt must meet ISO safety standards and be locked before the car moves.
+
+GRC Example
+
+Policy:
+
+Use strong passwords.
+
+Standard:
+
+Minimum 12 characters
+One uppercase
+One lowercase
+One number
+One special character
+
+Now everyone knows exactly what "strong" means.
+
+Memory Trick
+
+Standard = Specific Numbers
+
+PROCEDURES
+
+> Mandatory, step by step instruction to complete a task 
+
+.like a tutorial very detailed
+.produce repeatable result
+
+Example: Incident REsponse Procedure
+
+Procedure = "HOW do you do it?"
+
+A procedure is a step-by-step instruction.
+
+Car example:
+
+Policy:
+
+Wear seatbelt.
+
+Procedure:
+
+Sit in driver's seat.
+Pull belt.
+Insert into buckle.
+Check it clicks.
+GRC Example
+
+Password Reset Procedure
+
+Open password portal.
+Verify identity using OTP.
+Create new password.
+Confirm password.
+Log in again.
+
+Memory Trick
+
+Procedure = Process

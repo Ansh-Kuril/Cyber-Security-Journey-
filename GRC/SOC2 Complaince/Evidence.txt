@@ -1,0 +1,43 @@
+Evidence
+
+Auditors don't believe words.
+
+They believe evidence.
+------------------------
+Examples
+
+Policy
+
+Evidence
+
+Signed PDF.
+----------------------------
+MFA Enabled
+
+Evidence
+
+Screenshot.
+-------------------------
+Training
+
+Evidence
+
+Certificate.
+-----------------------
+Backup
+
+Evidence
+
+Backup Report.
+-------------------------
+Access Review-
+
+Evidence
+
+Excel Sheet.
+------------------------
+Firewall
+
+Evidence
+
+Configuration Screenshot.
